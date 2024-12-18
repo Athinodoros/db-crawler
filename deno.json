@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --allow-env=PGUSER,PGPASSWORD,PGHOST,PGPORT,PGAPPNAME,PGDATABASE,PGOPTIONS --allow-net='localhost:5432','localhost:9000','0.0.0.0:9000' --env-file main.ts",
+    "dev2": "deno run --watch --allow-env=PGUSER,PGPASSWORD,PGHOST,PGPORT,PGAPPNAME,PGDATABASE,PGOPTIONS --allow-net='localhost:5432','localhost:9000','0.0.0.0:9000' --env-file main.ts -s dfgdfg"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "parse": "https://deno.land/std@0.200.0/flags/mod.ts",
+    "pg": "https://deno.land/x/postgres/mod.ts",
+    "oak": "jsr:@oak/oak"
+
+  }
+}
